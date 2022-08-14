@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('readers', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('username')->unique();
+            $table->string('email')->unique();
+            $table->string('password');
             $table->timestamps();
         });
     }
