@@ -10,4 +10,4 @@ class SignInController extends Controller
     //Hello there! Azzam was.. eh tapi boong!!
 }
 
-$duit = "sudah banyak";
+$duit = "sudah banyak banget";
