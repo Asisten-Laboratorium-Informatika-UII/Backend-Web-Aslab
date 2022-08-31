@@ -55,4 +55,16 @@ class User extends Authenticatable
         });
    
     }
+
+    /**
+     * Get the user's first name.
+     *
+     * @return \Illuminate\Database\Eloquent\Casts\Attribute
+     */
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($value) => strtoupper($value),
+        );
+    }
 }
